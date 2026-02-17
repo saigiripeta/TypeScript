@@ -1,4 +1,10 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var module1_1 = require("./module1");
+var module1_2 = require("./module1");
 console.log(module1_1.var_one);
+console.log(module1_2.default);
+var myvar = require("./module1");
+console.log("====>" + myvar.name1, myvar.name2, myvar.name3);
+var module1_3 = require("./module1");
+console.log((0, module1_3.default)());

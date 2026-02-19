@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON2</title>
+</head>
+<body>
+    <script>
+        let obj = {
+            key1:{
+                fullstack:"MEAN STACK"
+            },
+            key2:{
+                frontend:"Angular"
+            },
+            key3:{
+                backend:"Spring Boot"
+            },
+            key4:{
+                database:"SQL Server"
+            }
+        }
+
+        document.write(`<table border="1px" border-radius="5px" align="center" cellspacing="10px" cellpadding="10px" >
+            
+            <tr > 
+                <td colspan="1"> ${obj.key1.fullstack}</td>
+                <td> ${obj.key2.frontend}</td>
+                <td> ${obj.key3.backend}</td>
+                <td> ${obj.key4.database}</td>
+                </tr>
+                </table>`)
+    </script>
+</body>
+</html>

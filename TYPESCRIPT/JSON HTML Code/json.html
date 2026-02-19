@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <!-- <script>
+        let obj = {
+            name : "saigiri",
+            mobile :7095997321,
+
+        }
+        document.write(obj.mobile, obj.name)
+    </script> -->
+
+    <!-- <script>
+        let obj = {
+            key1: {
+                msg: "Welcome to JSON"
+            }
+        }
+        document.write(obj.key1.msg)
+    </script> -->
+
+    <script>
+        let json3 = {
+            key:"Mean Stack",
+            key1:{
+                Front_End :"Angualr 20"
+            },
+            key2:{
+                Backend:"Spring Boot"
+            },
+            key3:{
+                Database:"SQL Server"
+            }
+        }
+
+        let value1 = json3.key;
+
+        let value2 = json3.key1.Front_End;
+        
+        let value3 = json3.key2.Backend;
+
+        let value4 = json3.key3.Database;
+
+        document.write(`<table border="1" align="center" cellspacing= "10px" cellpading="10px" border="black" border-radius="5px">
+            <tr>
+                <td colspan="3"> ${value1} </td>
+                </tr>
+                
+                <tr> 
+                    <td> ${value2} </td>
+                    <td> ${value3} </td>
+                    <td> ${value4} </td>
+                    </tr>
+                    </table>`)
+    </script>
+</body>
+</html>

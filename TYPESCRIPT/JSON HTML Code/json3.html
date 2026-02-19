@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Example 3</title>
+</head>
+<body>
+    <script>
+        let obj =[
+            {p1:1,pname:"pone",pcost:100},
+            {p1:2,pname:"ptwo",pcost:200},
+            {p1:3,pname:"pthree",pcost:300},
+            {p1:4,pname:"pfour",pcost:400},
+            {p1:5,pname:"pfive",pcost:500}
+        ];
+
+        obj.forEach((ele,ind)=>{
+   
+            document.write(`<table align="center" cellspacing="10px" cellpadding="10px" border="1px solid black">
+                <tr>
+                    <td > ${ele.p1} </td>
+                    <td > ${ele.pname} </td>
+                    <td > ${ele.pcost }</td>
+                    </tr>
+                    </table>`)
+        })
+    </script>
+</body>
+</html>

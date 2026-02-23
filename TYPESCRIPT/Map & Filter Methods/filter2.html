@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter with the example</title>
+</head>
+<body>
+    <script>
+    let arr = [{eid:111,esal:10000,ejob:"sales"},
+    {eid:222,esal:1000,ejob:"Sales boy"},
+    {eid:333,esal:20000,ejob:"manager"},
+    {eid:444,esal:30000,ejob:"CEO"},
+    {eid:555,esal:40000,ejob:"Developer"}]
+
+  let newarr=  arr.filter((ele,ind)=>{
+    if(ele.esal >= 30000){
+        return ele.ejob
+    }
+    else if(ele.esal <= 2000){
+        delete arr.ele
+    }
+    })
+    document.writeln(newarr)
+    console.log(newarr)
+    </script>
+</body>
+</html>

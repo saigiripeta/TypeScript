@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To get the keys of JSON </title>
+</head>
+<body>
+    <script>
+        let obj ={
+            key1:"Hello1",
+            key2:"Hello2",
+            key3:"Hello3"
+        };
+
+        let  keys = Object.keys(obj)
+
+        // document.write(keys)
+
+        // ["key1","key2","key3"]
+         let values = Object.values(obj);
+        document.writeln(values)
+
+        if(keys.length !=0){
+            document.write("the object is not empty")
+        }else{
+            document.write("Object is empty")
+        }
+
+       
+    </script>
+</body>
+</html>

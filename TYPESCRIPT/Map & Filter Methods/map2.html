@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map methpd with example</title>
+</head>
+<body>
+    <script>
+        let obj =[{"key1":"hello1"},{"key1":"hello2"},{"key1":"hello3"},{"key1":"hello4"},{"key1":"hello5"}];
+
+  let newobj =      obj.map((ele,ind)=>{
+            if(ind === 0 ){
+                return {...ele,"key2":"welcome1"}
+            }else if(ind === 1){
+                return {...ele,"key2":"Welcome2"}
+            }else if(ind ===2){
+                return {...ele,"key2":"Welcome3"}
+            }else if(ind ===3){
+                return {...ele,"key2":"welcome4"}
+            }else if(ind ===4){
+                return {...ele,"key2":"welcome5"}
+            }else{
+                return {...ele,"key2":"Welcome"}
+            }
+            
+        })
+//convert this into switch case
+        console.log(newobj)
+    </script>
+</body>
+</html>

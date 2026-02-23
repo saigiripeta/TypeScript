@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copying JSON Data</title>
+</head>
+<body>
+       
+    <script>
+        // Taking the xerox copy is called Immutability
+        let obj ={
+            key :"Angular 16"
+        }
+
+        let xerox ={...obj};
+
+         obj.key ="Angular with Typescript";
+
+         xerox.key= "Spring boot with microservices";
+
+         let {key : original}= obj;
+         let {key : duplicate}= xerox;
+ 
+         document.write(original);
+         document.write(duplicate)
+
+    </script>
+</body>
+</html>

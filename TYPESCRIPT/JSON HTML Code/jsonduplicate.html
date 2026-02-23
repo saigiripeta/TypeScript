@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duplicate keys in JSON</title>
+</head>
+<body>
+    <script>
+        let obj = {
+            key1:100,
+            key1:200
+        }
+         let {key1} = obj
+        document.write(key1)
+        //old value replaced with new value.
+    </script>
+
+    <script>
+        let obj1={
+            key3:"Hello1",
+            key4:"Hello1"
+        }  
+        let {key3,key4}=obj1;
+        document.write(key3,key4)
+    </script>
+</body>
+</html>

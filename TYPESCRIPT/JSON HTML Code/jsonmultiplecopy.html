@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Multiple copies</title>
+</head>
+<body>
+    <script>
+        let obj ={
+            key1:"Angular",
+        }  
+
+        let obj1={
+            key2:"Spring Boot"
+        }
+
+        let obj2 ={
+            key3:"Sql Server"
+        }
+
+        let obj4 ={...obj,...obj1,...obj2};
+
+        let {key1,key2,key3} = obj4;
+
+        document.write(`<p>${key1}</p>
+        <p>${key2}</p>
+        <p>${key3}</P>`)
+    </script>
+</body>
+</html>
